@@ -41,7 +41,7 @@ export default function InstallPWA() {
         className="absolute top-0 left-0 bg-red-300 border border-black"
         style={{ padding: "10px", fontSize: "16px" }}
       >
-        Installer l'application
+        Installer l&apos;application
       </button>
     )
   );
