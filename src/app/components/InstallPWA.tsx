@@ -38,6 +38,7 @@ export default function InstallPWA() {
     isVisible && (
       <button
         onClick={installApp}
+        className="absolute top-0 left-0 bg-red-300 border border-black"
         style={{ padding: "10px", fontSize: "16px" }}
       >
         Installer l'application
