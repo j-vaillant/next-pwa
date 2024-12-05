@@ -1,5 +1,6 @@
 import "./globals.css";
 import Quote from "./components/Quote";
+import InstallPWA from "./components/InstallPWA";
 
 const fetchData = async () => {
   const resp = await fetch("https://zenquotes.io/api/today/");
@@ -13,5 +14,10 @@ export default async function Home() {
 
   console.log(data, "DATA");
 
-  return <Quote quote={data[0]} />;
+  return (
+    <>
+      <Quote quote={data[0]} />
+      <InstallPWA />
+    </>
+  );
 }
